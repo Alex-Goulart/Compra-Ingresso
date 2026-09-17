@@ -17,7 +17,15 @@ function comprar() {
         return; // Se o usuário cancelar, a função é encerrada
     }
 
-    // Verificar o tipo de ingresso escolhido
+    verificarTipoIngresso(tipoIngresso, quantidade);
+
+    //limpar o campo de quantidade após a compra
+    document.getElementById('qtd').value = '';
+}
+ 
+// Função para verificar o tipo de ingresso escolhido
+function verificarTipoIngresso(tipoIngresso, quantidade) {
+   
     if (tipoIngresso === 'pista') {
         let quantidadeDisponivel = parseInt(document.getElementById('qtd-pista').textContent); // recuperar a quantidade de ingressos disponíveis para pista
         if (quantidade <= quantidadeDisponivel) {
@@ -46,7 +54,4 @@ function comprar() {
             alert('Quantidade de ingressos selecionada excede a disponível.');
         }
     }
-
-    //limpar o campo de quantidade após a compra
-    document.getElementById('qtd').value = '';
 }
