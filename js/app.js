@@ -16,7 +16,7 @@ function comprar() {
     if (!confirmarCompra) {
         return; // Se o usuário cancelar, a função é encerrada
     }
-
+    // Chama a função para verificar o tipo de ingresso e atualizar a quantidade disponível
     verificarTipoIngresso(tipoIngresso, quantidade);
 
     //limpar o campo de quantidade após a compra
