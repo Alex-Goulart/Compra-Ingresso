@@ -11,7 +11,6 @@ function comprar() {
         if (quantidade <= quantidadeDisponivel) {
             quantidadeDisponivel = quantidadeDisponivel - quantidade; // atualizar a quantidade de ingressos disponíveis
             document.getElementById('qtd-pista').textContent = quantidadeDisponivel;
-            alert(`Compra realizada com sucesso! Restam ${quantidadeDisponivel} ingressos de pista.`);
         } else {
             alert('Quantidade de ingressos selecionada excede a disponível.');
         }
@@ -20,7 +19,6 @@ function comprar() {
         if (quantidade <= quantidadeDisponivel) {
             quantidadeDisponivel = quantidadeDisponivel - quantidade; // atualizar a quantidade de ingressos disponíveis
             document.getElementById('qtd-superior').textContent = quantidadeDisponivel;
-            alert(`Compra realizada com sucesso! Restam ${quantidadeDisponivel} ingressos de superior.`);
         } else {
             alert('Quantidade de ingressos selecionada excede a disponível.');
         }
@@ -29,7 +27,6 @@ function comprar() {
         if (quantidade <= quantidadeDisponivel) {
             quantidadeDisponivel = quantidadeDisponivel - quantidade; // atualizar a quantidade de ingressos disponíveis
             document.getElementById('qtd-inferior').textContent = quantidadeDisponivel;
-            alert(`Compra realizada com sucesso! Restam ${quantidadeDisponivel} ingressos de inferior.`);
         } else {
             alert('Quantidade de ingressos selecionada excede a disponível.');
         }
